@@ -52,3 +52,10 @@ Test it with curl:
 ```bash
 curl -X POST http://localhost:8000/calculate -H "Content-Type: application/json" -d '{"weight_kg":70,"height_cm":175}'
 ```
+
+## Run the Docker Hub image
+
+```bash
+docker pull gorhovsepyanarm/bmi-calculator-service:latest
+docker run --name bmi-service -p 8000:8000 gorhovsepyanarm/bmi-calculator-service:latest
+```
